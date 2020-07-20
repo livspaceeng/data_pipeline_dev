@@ -1,15 +1,9 @@
-FROM python:3.6-alpine3.7
-RUN apk add --no-cache --update \
-    python3 python3-dev gcc \
-    gfortran musl-dev g++ \
-    libffi-dev openssl-dev \
-    libxml2 libxml2-dev \
-    libxslt libxslt-dev \
-    libjpeg-turbo-dev zlib-dev
+FROM python:3.8.0-slim
+RUN apt-get update \
+&& apt-get install gcc -y \
+&& apt-get clean
 
-RUN pip install --upgrade pip
-RUN pip install -U setuptools
-RUN pip install -U wheel
+
 RUN pip install pandas
 COPY requirements.txt /
 RUN pip install -r requirements.txt
