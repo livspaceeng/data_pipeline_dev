@@ -8,7 +8,6 @@ RUN apk add --no-cache --update \
     libjpeg-turbo-dev zlib-dev
 
 RUN pip install --upgrade pip
-RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
 RUN pip install -U setuptools
 RUN pip install -U wheel
 RUN pip install pandas
