@@ -1,8 +1,7 @@
 jobs:
         main:
             requires: [~pr, ~commit, ~sd@123:main]
-            sourcePaths: ["src/app/", "screwdriver.yaml"]
-            image: node:6
+            sourcePaths: [ "screwdriver.yaml"]
             steps:
                 - export: export GREETING="Hello, world!"
-                - hello: echo $GREETINg
+                - hello: echo $GREETING
