@@ -3,5 +3,5 @@ jobs:
             requires: [~pr, ~commit, ~sd@123:main]
             sourcePaths: [ "screwdriver.yaml"]
             steps:
-                - export: export GREETING="Hello, world!"
+                - export: export GREETING="Hello, world! Welcome"
                 - hello: echo $GREETING
