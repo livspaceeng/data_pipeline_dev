@@ -5,5 +5,5 @@ dnspython
 pymongo
 bison
 firebase_admin
-
+pandas
 
