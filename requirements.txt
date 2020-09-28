@@ -6,3 +6,4 @@ pymongo
 bison
 firebase_admin
 awscli
+awswrangler
