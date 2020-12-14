@@ -7,3 +7,5 @@ bison
 firebase_admin
 awscli
 awswrangler
+elasticsearch
+logging
